@@ -33,6 +33,8 @@ const Header = ({ currentUser }) => (
   </div>
 );
 
+// map props (currentUser) to root reducer
+// mapStateToProps: component receive state from reducer
 const mapStateToProps = state => ({
   currentUser: state.user.currentUser
 });

@@ -9,6 +9,8 @@ import './index.css';
 import App from './App';
 
 ReactDOM.render(
+
+  //give the redux store context to the application
   <Provider store={store}>
     <BrowserRouter>
       <App />

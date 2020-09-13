@@ -2,6 +2,7 @@ const INITIAL_STATE = {
   currentUser: null
 };
 
+// state is the previous state
 const userReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case 'SET_CURRENT_USER':

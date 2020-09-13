@@ -40,6 +40,8 @@ class App extends React.Component {
   render() {
     return (
       <div>
+
+      {/* no need to passin the state to header */}
         <Header />
         <Switch>
           <Route exact path='/' component={HomePage} />
@@ -51,10 +53,12 @@ class App extends React.Component {
   }
 }
 
+// passing action to reducer
 const mapDispatchToProps = dispatch => ({
   setCurrentUser: user => dispatch(setCurrentUser(user))
 });
 
+// no need any function from reducer
 export default connect(
   null,
   mapDispatchToProps
