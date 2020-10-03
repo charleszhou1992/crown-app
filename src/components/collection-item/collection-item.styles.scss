@@ -4,6 +4,8 @@
   flex-direction: column;
   height: 350px;
   align-items: center;
+  position: relative;
+  // relative to the bustom button
 
   .image {
     width: 100%;
@@ -11,6 +13,30 @@
     background-size: cover;
     background-position: center;
     margin-bottom: 5px;
+  }
+
+  .custom-button{
+    width: 80%;
+    opacity: 0.7;
+    position: absolute;
+    // absolute to the background
+    top: 255px;
+    
+    // hiden when not hover(custom feature)
+    display: none;
+  }
+
+  &:hover{
+    .image{
+      opacity: 0.8;
+    }
+
+    // when hover over, show the button
+    .custom-button{
+      opacity: 0.85;
+      display:flex;
+    }
+
   }
 
   .collection-footer {
